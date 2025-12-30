@@ -1,0 +1,57 @@
+# ד"ר איל הורוביץ — Generative Engine Optimization Map
+
+> A ייעוץ עסקי והנהלה business.
+
+---
+
+## Pages
+
+### בית
+https://-79048c8c.zappy5.app
+ד"ר איל הורוביץ - מנטור עסקי למנכ"לים בישראל. מנטורינג ליזמים ומנהלים בכירים עם התאמה אישית מלאה. צור קשר עוד היום!
+
+### שירותים
+https://-79048c8c.zappy5.app/services
+גלה את מגוון שירותי המנטורינג העסקי של ד"ר איל הורוביץ - מנטור עסקי למנכלים, ייעוץ אסטרטגי ופיתוח מנהיגות לבכירים. התאמה אישית מלאה!
+
+### אודות
+https://-79048c8c.zappy5.app/about
+הכירו את ד"ר איל הורוביץ - מנטור עסקי למנכלים בישראל עם ניסיון רב שנים במנטורינג ליזמים ומנהלים בכירים. גישה ייחודית ותוצאות מוכחות!
+
+### צור קשר
+https://-79048c8c.zappy5.app/contact
+צור קשר עם ד"ר איל הורוביץ - מנטור עסקי למנכלים בישראל. קבע פגישת ייעוץ ראשונית ותתחיל את המסע למנטורינג עסקי מקצועי עוד היום!
+
+## Legal & Policy
+
+### Privacy Policy
+https://-79048c8c.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-79048c8c.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-79048c8c.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About ד"ר איל הורוביץ
+ד"ר איל הורוביץ is a business in the ייעוץ עסקי והנהלה industry.
+
+## Target Audience
+אנשי עסקים בכירים, מנכ"לים ויזמים
+
+## Industry
+ייעוץ עסקי והנהלה
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://-79048c8c.zappy5.app/sitemap.xml
+- **Robots.txt**: https://-79048c8c.zappy5.app/robots.txt

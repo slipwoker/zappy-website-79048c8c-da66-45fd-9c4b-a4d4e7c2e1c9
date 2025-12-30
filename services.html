@@ -1,0 +1,881 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>שירותי מנטורינג עסקי מקיפים — ד"ר איל הורוביץ</title>
+  <meta name="description" content="גלה את מגוון שירותי המנטורינג העסקי של ד"ר איל הורוביץ - מנטור עסקי למנכלים, ייעוץ אסטרטגי ופיתוח מנהיגות לבכירים. התאמה אישית מלאה!">
+  <meta name="keywords" content="מנטור עסקי, מנטורינג ליזמים ומנהלים בכירים, מנטור עסקי למנכלים בישראל, ד" ר="" איל="" הורוביץ"="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+<!-- Zappy Analytics -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  var config = {
+    websiteId: '79048c8c-da66-45fd-9c4b-a4d4e7c2e1c9',
+    apiUrl: 'https://api.zappy5.com/api/analytics/track',
+    sessionDuration: 30 * 60 * 1000, // 30 minutes
+    visitorDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    trackPageViews: true,
+    trackClicks: true,
+    trackFormSubmissions: true
+  };
+  
+  // Generate or retrieve persistent visitor ID (30 days)
+  function getVisitorId() {
+    var visitorKey = 'zappy_visitor_' + config.websiteId;
+    var visitor = null;
+    
+    try {
+      visitor = localStorage.getItem(visitorKey);
+      if (visitor) {
+        var visitorData = JSON.parse(visitor);
+        var now = Date.now();
+        
+        // Check if visitor ID is still valid (30 days)
+        if (now - visitorData.created < config.visitorDuration) {
+          // Update last seen timestamp
+          visitorData.lastSeen = now;
+          localStorage.setItem(visitorKey, JSON.stringify(visitorData));
+          return visitorData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: LocalStorage not available');
+    }
+    
+    // Generate new visitor ID
+    var newVisitorId = 'zv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      localStorage.setItem(visitorKey, JSON.stringify({
+        id: newVisitorId,
+        created: Date.now(),
+        lastSeen: Date.now()
+      }));
+    } catch (e) {
+      // Continue without local storage
+    }
+    
+    return newVisitorId;
+  }
+  
+  // Generate or retrieve session ID (30 minutes)
+  function getSessionId() {
+    var sessionKey = 'zappy_session_' + config.websiteId;
+    var session = null;
+    
+    try {
+      session = sessionStorage.getItem(sessionKey);
+      if (session) {
+        var sessionData = JSON.parse(session);
+        var now = Date.now();
+        
+        // Check if session is still valid
+        if (now - sessionData.timestamp < config.sessionDuration) {
+          // Update timestamp
+          sessionData.timestamp = now;
+          sessionStorage.setItem(sessionKey, JSON.stringify(sessionData));
+          return sessionData.id;
+        }
+      }
+    } catch (e) {
+      console.warn('Zappy Analytics: SessionStorage not available');
+    }
+    
+    // Generate new session ID
+    var newSessionId = 'zs_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    
+    try {
+      sessionStorage.setItem(sessionKey, JSON.stringify({
+        id: newSessionId,
+        timestamp: Date.now()
+      }));
+    } catch (e) {
+      // Continue without session storage
+    }
+    
+    return newSessionId;
+  }
+  
+  var visitorId = getVisitorId();
+  var sessionId = getSessionId();
+  
+  // Track an event
+  function trackEvent(eventType, data) {
+    data = data || {};
+    
+    var eventData = {
+      website_id: config.websiteId,
+      event_type: eventType,
+      page_path: window.location.pathname,
+      referrer: document.referrer || 'direct',
+      visitor_id: visitorId,
+      session_id: sessionId,
+      metadata: data
+    };
+    
+    // Use sendBeacon if available (better for page unload events)
+    if (navigator.sendBeacon) {
+      var blob = new Blob([JSON.stringify(eventData)], { type: 'application/json' });
+      navigator.sendBeacon(config.apiUrl, blob);
+    } else {
+      // Fallback to fetch
+      fetch(config.apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(eventData),
+        keepalive: true
+      }).catch(function(error) {
+        console.warn('Zappy Analytics: Failed to track event', error);
+      });
+    }
+  }
+  
+  // Track page view
+  if (config.trackPageViews) {
+    trackEvent('pageview', {
+      title: document.title,
+      url: window.location.href
+    });
+  }
+  
+  // Track clicks on important elements
+  if (config.trackClicks) {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      
+      // Track button clicks (counted as actions)
+      if (target.tagName === 'BUTTON' || target.closest('button')) {
+        var button = target.tagName === 'BUTTON' ? target : target.closest('button');
+        trackEvent('click', {
+          element: 'button',
+          text: button.textContent.trim().substring(0, 100),
+          id: button.id || null,
+          class: button.className || null
+        });
+      }
+      
+      // Track link clicks (navigation - not counted as actions)
+      else if (target.tagName === 'A' || target.closest('a')) {
+        var link = target.tagName === 'A' ? target : target.closest('a');
+        trackEvent('navigation', {
+          element: 'link',
+          text: link.textContent.trim().substring(0, 100),
+          href: link.href,
+          external: link.hostname !== window.location.hostname
+        });
+      }
+    }, true);
+  }
+  
+  // Track form submissions
+  if (config.trackFormSubmissions) {
+    document.addEventListener('submit', function(e) {
+      var form = e.target;
+      
+      trackEvent('form_submit', {
+        form_id: form.id || null,
+        form_name: form.name || null,
+        form_action: form.action || null,
+        form_method: form.method || 'GET'
+      });
+    }, true);
+  }
+  
+  // Track time on page (send on page unload)
+  var pageLoadTime = Date.now();
+  
+  window.addEventListener('beforeunload', function() {
+    var timeOnPage = Math.floor((Date.now() - pageLoadTime) / 1000); // in seconds
+    
+    trackEvent('page_unload', {
+      time_on_page: timeOnPage,
+      page_path: window.location.pathname
+    });
+  });
+  
+  // Expose tracking function globally for custom events
+  window.zappyAnalytics = {
+    track: trackEvent,
+    getVisitorId: function() { return visitorId; },
+    getSessionId: function() { return sessionId; }
+  };
+  
+})();
+</script>
+<!-- End Zappy Analytics -->
+
+    <style id="zappy-mobile-submenu-styles">
+      /* Mobile submenu accordion styles */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu {
+          position: static !important;
+          transform: none !important;
+          box-shadow: none !important;
+          background: transparent !important;
+          margin-top: 0 !important;
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          visibility: hidden;
+          transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease, padding 0.3s ease;
+          padding: 0 !important;
+          border-radius: 0 !important;
+        }
+        .sub-menu.mobile-expanded {
+          max-height: 500px !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+          padding: 8px 0 8px 16px !important;
+        }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded, html[lang="ar"] .sub-menu.mobile-expanded {
+          padding: 8px 16px 8px 0 !important;
+        }
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu {
+          opacity: 0; visibility: hidden; pointer-events: none;
+        }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded {
+          opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
+        }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) {
+          display: flex !important; flex-wrap: wrap !important; align-items: center !important;
+        }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a {
+          flex: 1 !important;
+        }
+        .mobile-submenu-toggle {
+          display: flex !important; align-items: center !important; justify-content: center !important;
+          width: 44px !important; height: 44px !important; background: transparent !important;
+          border: none !important; cursor: pointer !important; padding: 0 !important; margin: 0 !important;
+          flex-shrink: 0 !important; -webkit-tap-highlight-color: transparent;
+        }
+        .mobile-submenu-toggle::after {
+          content: '' !important; display: block !important; width: 0 !important; height: 0 !important;
+          border-left: 6px solid transparent !important; border-right: 6px solid transparent !important;
+          border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important;
+        }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu, .navbar li:has(.sub-menu) > .sub-menu, #navMenu li:has(.sub-menu) > .sub-menu {
+          flex-basis: 100% !important; width: 100% !important;
+        }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; font-size: 14px !important; }
+        .sub-menu a:hover { background-color: transparent !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="/assets/business-logo.webp" alt="ד" ר="" איל="" הורוביץ"="" class="logo">
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="פתח תפריט">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="התקשר אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/services" class="active">שירותים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>שירותי מנטורינג עסקי מותאמים אישית</h1>
+      <h3>ד"ר איל הורוביץ מציע מגוון רחב של שירותי מנטורינג ליזמים ומנהלים בכירים, עם דגש על תוצאות מדידות והצלחה עסקית מתמשכת</h3>
+    </div>
+  </section>
+
+  <section class="section service-section" id="מנטורינג-אסטרטגי-למנכלים-ויזמים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed">
+      
+        <div class="service-detailed-content">
+          <h2>מנטורינג אסטרטגי למנכ"לים ויזמים</h2>
+          <p>כמנטור עסקי למנכ"לים בישראל, ד"ר איל הורוביץ מספק ליווי אישי ומקיף למנהיגים עסקיים בכירים. השירות כולל פגישות קבועות להתייעצות בנושאים אסטרטגיים, קבלת החלטות קריטיות, וניהול שינויים ארגוניים מורכבים. המנטורינג מתמקד בפיתוח חשיבה אסטרטגית ארוכת טווח, זיהוי הזדמנויות עסקיות חדשות, והתמודדות עם אתגרים ניהוליים בצורה יעילה ומקצועית.</p>
+          <p>התהליך כולל ניתוח מעמיק של המצב העסקי הנוכחי, הגדרת יעדים ברורים ומדידים, ובניית תוכנית פעולה קונקרטית להשגתם. ד"ר הורוביץ מביא ניסיון רב שנים בליווי מנכ"לים מארגונים מגוונים, ומספק כלים מעשיים לשיפור ביצועים ארגוניים והובלת צוותים בצורה אפקטיבית.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> ליווי אישי בקבלת החלטות אסטרטגיות</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח תוכניות צמיחה ארוכות טווח</li>
+            <li><i class="fas fa-check-circle"></i> ניהול שינויים ארגוניים מורכבים</li>
+            <li><i class="fas fa-check-circle"></i> זיהוי והערכת הזדמנויות עסקיות</li>
+          </ul>
+        </div>
+        <div class="service-detailed-image">
+          <img data-placeholder="service-5" data-context="מנטור עסקי מוביל דיון אסטרטגי עם מנכ" ל="" בחדר="" ישיבות="" מודרני="" ויוקרתי"="" src="/assets/service-service-5.webp" alt="מנטורינג אסטרטגי למנכלים" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="מנטורינג-אסטרטגי-למנכלים-ויזמים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-content">
+      
+          <h2>מנטורינג אסטרטגי למנכ"לים ויזמים</h2>
+          <p>כמנטור עסקי למנכ"לים בישראל, ד"ר איל הורוביץ מספק ליווי אישי ומקיף למנהיגים עסקיים בכירים. השירות כולל פגישות קבועות להתייעצות בנושאים אסטרטגיים, קבלת החלטות קריטיות, וניהול שינויים ארגוניים מורכבים. המנטורינג מתמקד בפיתוח חשיבה אסטרטגית ארוכת טווח, זיהוי הזדמנויות עסקיות חדשות, והתמודדות עם אתגרים ניהוליים בצורה יעילה ומקצועית.</p>
+          <p>התהליך כולל ניתוח מעמיק של המצב העסקי הנוכחי, הגדרת יעדים ברורים ומדידים, ובניית תוכנית פעולה קונקרטית להשגתם. ד"ר הורוביץ מביא ניסיון רב שנים בליווי מנכ"לים מארגונים מגוונים, ומספק כלים מעשיים לשיפור ביצועים ארגוניים והובלת צוותים בצורה אפקטיבית.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> ליווי אישי בקבלת החלטות אסטרטגיות</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח תוכניות צמיחה ארוכות טווח</li>
+            <li><i class="fas fa-check-circle"></i> ניהול שינויים ארגוניים מורכבים</li>
+            <li><i class="fas fa-check-circle"></i> זיהוי והערכת הזדמנויות עסקיות</li>
+          </ul>
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="services-item-3" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-image">
+      
+          <img data-placeholder="service-5" data-context="מנטור עסקי מוביל דיון אסטרטגי עם מנכ" ל="" בחדר="" ישיבות="" מודרני="" ויוקרתי"="" src="/assets/service-service-5.webp" alt="מנטורינג אסטרטגי למנכלים" class="service-img">
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="פיתוח-מנהיגות-ומיומנויות-ניהול" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed reverse">
+      
+        <div class="service-detailed-content">
+          <h2>פיתוח מנהיגות ומיומנויות ניהול</h2>
+          <p>תוכנית מקיפה לפיתוח מיומנויות מנהיגות לבכירים, מנהלים ויזמים המעוניינים לשפר את יכולות ההובלה שלהם. המנטורינג כולל עבודה על תקשורת אפקטיבית, ניהול צוותים, פיתוח חשיבה מערכתית, ובניית יכולות קבלת החלטות תחת לחץ. ד"ר הורוביץ משלב כלים מעולם האקדמיה עם ניסיון מעשי רב שנים בשטח, ומספק גישה מותאמת אישית לכל מנהיג.</p>
+          <p>התוכנית מתמקדת בפיתוח מודעות עצמית, זיהוי נקודות חוזק ותחומים לשיפור, ובניית סגנון מנהיגות אותנטי ואפקטיבי. המנטורינג כולל תרגול מעשי, משוב מתמשך, ולמידה מניסיון בזמן אמת. הדגש הוא על יצירת שינוי מתמשך ובניית הרגלי עבודה שמובילים להצלחה ארוכת טווח.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> פיתוח סגנון מנהיגות אישי ואותנטי</li>
+            <li><i class="fas fa-check-circle"></i> שיפור מיומנויות תקשורת ומשא ומתן</li>
+            <li><i class="fas fa-check-circle"></i> ניהול צוותים והובלת שינויים</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח אינטליגנציה רגשית ניהולית</li>
+          </ul>
+        </div>
+        <div class="service-detailed-image">
+          <img data-placeholder="service-6" data-context="מנהל בכיר משתתף בתוכנית פיתוח מנהיגות עם מנטור עסקי מקצועי" src="/assets/service-service-6.webp" alt="פיתוח מנהיגות לבכירים" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="פיתוח-מנהיגות-ומיומנויות-ניהול" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-content">
+      
+          <h2>פיתוח מנהיגות ומיומנויות ניהול</h2>
+          <p>תוכנית מקיפה לפיתוח מיומנויות מנהיגות לבכירים, מנהלים ויזמים המעוניינים לשפר את יכולות ההובלה שלהם. המנטורינג כולל עבודה על תקשורת אפקטיבית, ניהול צוותים, פיתוח חשיבה מערכתית, ובניית יכולות קבלת החלטות תחת לחץ. ד"ר הורוביץ משלב כלים מעולם האקדמיה עם ניסיון מעשי רב שנים בשטח, ומספק גישה מותאמת אישית לכל מנהיג.</p>
+          <p>התוכנית מתמקדת בפיתוח מודעות עצמית, זיהוי נקודות חוזק ותחומים לשיפור, ובניית סגנון מנהיגות אותנטי ואפקטיבי. המנטורינג כולל תרגול מעשי, משוב מתמשך, ולמידה מניסיון בזמן אמת. הדגש הוא על יצירת שינוי מתמשך ובניית הרגלי עבודה שמובילים להצלחה ארוכת טווח.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> פיתוח סגנון מנהיגות אישי ואותנטי</li>
+            <li><i class="fas fa-check-circle"></i> שיפור מיומנויות תקשורת ומשא ומתן</li>
+            <li><i class="fas fa-check-circle"></i> ניהול צוותים והובלת שינויים</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח אינטליגנציה רגשית ניהולית</li>
+          </ul>
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="services-item-6" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-image">
+      
+          <img data-placeholder="service-6" data-context="מנהל בכיר משתתף בתוכנית פיתוח מנהיגות עם מנטור עסקי מקצועי" src="/assets/service-service-6.webp" alt="פיתוח מנהיגות לבכירים" class="service-img">
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="ייעוץ-לצמיחה-והתרחבות-עסקית" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed">
+      
+        <div class="service-detailed-content">
+          <h2>ייעוץ לצמיחה והתרחבות עסקית</h2>
+          <p>שירות מקיף לזיהוי הזדמנויות צמיחה, פיתוח אסטרטגיות התרחבות, וליווי בתהליכי שינוי ארגוני. המנטור עסקי מסייע בניתוח שוק מעמיק, זיהוי יתרונות תחרותיים, ובניית תוכנית פעולה מפורטת להשגת יעדי הצמיחה. השירות כולל ליווי בהחלטות אסטרטגיות מרכזיות כמו כניסה לשווקים חדשים, פיתוח מוצרים ושירותים חדשים, ובניית שותפויות אסטרטגיות.</p>
+          <p>ד"ר הורוביץ מביא ניסיון עשיר בליווי ארגונים בתהליכי צמיחה מורכבים, ומספק כלים מעשיים לניהול סיכונים, תכנון פינסי, ובניית תשתיות ארגוניות שתומכות בצמיחה מתמשכת. המנטורינג כולל גם עבודה על פיתוח תרבות ארגונית שמעודדת חדשנות ויזמות פנים-ארגונית.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> זיהוי והערכת הזדמנויות צמיחה</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח אסטרטגיות התרחבות לשווקים חדשים</li>
+            <li><i class="fas fa-check-circle"></i> ליווי בתהליכי מיזוגים ורכישות</li>
+            <li><i class="fas fa-check-circle"></i> בניית תוכניות פעולה מפורטות</li>
+          </ul>
+        </div>
+        <div class="service-detailed-image">
+          <img data-placeholder="service-7" data-context="יזם מקבל ייעוץ עסקי על אסטרטגיית צמיחה והתרחבות במשרד מודרני" src="/assets/service-service-7.webp" alt="ייעוץ לצמיחה עסקית" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="ייעוץ-לצמיחה-והתרחבות-עסקית" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-content">
+      
+          <h2>ייעוץ לצמיחה והתרחבות עסקית</h2>
+          <p>שירות מקיף לזיהוי הזדמנויות צמיחה, פיתוח אסטרטגיות התרחבות, וליווי בתהליכי שינוי ארגוני. המנטור עסקי מסייע בניתוח שוק מעמיק, זיהוי יתרונות תחרותיים, ובניית תוכנית פעולה מפורטת להשגת יעדי הצמיחה. השירות כולל ליווי בהחלטות אסטרטגיות מרכזיות כמו כניסה לשווקים חדשים, פיתוח מוצרים ושירותים חדשים, ובניית שותפויות אסטרטגיות.</p>
+          <p>ד"ר הורוביץ מביא ניסיון עשיר בליווי ארגונים בתהליכי צמיחה מורכבים, ומספק כלים מעשיים לניהול סיכונים, תכנון פינסי, ובניית תשתיות ארגוניות שתומכות בצמיחה מתמשכת. המנטורינג כולל גם עבודה על פיתוח תרבות ארגונית שמעודדת חדשנות ויזמות פנים-ארגונית.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> זיהוי והערכת הזדמנויות צמיחה</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח אסטרטגיות התרחבות לשווקים חדשים</li>
+            <li><i class="fas fa-check-circle"></i> ליווי בתהליכי מיזוגים ורכישות</li>
+            <li><i class="fas fa-check-circle"></i> בניית תוכניות פעולה מפורטות</li>
+          </ul>
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="services-item-9" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-image">
+      
+          <img data-placeholder="service-7" data-context="יזם מקבל ייעוץ עסקי על אסטרטגיית צמיחה והתרחבות במשרד מודרני" src="/assets/service-service-7.webp" alt="ייעוץ לצמיחה עסקית" class="service-img">
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="ניהול-משברים-ואתגרים-עסקיים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed reverse">
+      
+        <div class="service-detailed-content">
+          <h2>ניהול משברים ואתגרים עסקיים</h2>
+          <p>ליווי מקצועי בתקופות של אתגרים עסקיים מורכבים, משברים ארגוניים, ושינויים דרמטיים בסביבה העסקית. ד"ר הורוביץ מספק תמיכה מקצועית בזיהוי מוקדם של בעיות, פיתוח תוכניות התמודדות, וליווי בהחלטות קריטיות תחת לחץ. השירות כולל ניתוח מצב מעמיק, זיהוי אפשרויות פעולה, והערכת השלכות של החלטות אפשריות.</p>
+          <p>המנטורינג מתמקד בפיתוח חוסן ארגוני, למידה מאתגרים, ובניית יכולות להתמודדות עם אי-ודאות. ד"ר הורוביץ מסייע למנכ"לים ומנהלים בכירים לשמור על בהירות מחשבה, לקבל החלטות מושכלות, ולהוביל את הארגון דרך תקופות מאתגרות בצורה אפקטיבית ומקצועית.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> זיהוי מוקדם של סיכונים ואתגרים</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח תוכניות חירום והתמודדות</li>
+            <li><i class="fas fa-check-circle"></i> ליווי בקבלת החלטות קריטיות</li>
+            <li><i class="fas fa-check-circle"></i> בניית חוסן ארגוני ואישי</li>
+          </ul>
+        </div>
+        <div class="service-detailed-image">
+          <img data-placeholder="service-8" data-context="מנטור עסקי מייעץ למנכ" ל="" בניהול="" משבר="" עסקי="" בסביבה="" מקצועית"="" src="/assets/service-service-8.webp" alt="ניהול משברים עסקיים" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="ניהול-משברים-ואתגרים-עסקיים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-content">
+      
+          <h2>ניהול משברים ואתגרים עסקיים</h2>
+          <p>ליווי מקצועי בתקופות של אתגרים עסקיים מורכבים, משברים ארגוניים, ושינויים דרמטיים בסביבה העסקית. ד"ר הורוביץ מספק תמיכה מקצועית בזיהוי מוקדם של בעיות, פיתוח תוכניות התמודדות, וליווי בהחלטות קריטיות תחת לחץ. השירות כולל ניתוח מצב מעמיק, זיהוי אפשרויות פעולה, והערכת השלכות של החלטות אפשריות.</p>
+          <p>המנטורינג מתמקד בפיתוח חוסן ארגוני, למידה מאתגרים, ובניית יכולות להתמודדות עם אי-ודאות. ד"ר הורוביץ מסייע למנכ"לים ומנהלים בכירים לשמור על בהירות מחשבה, לקבל החלטות מושכלות, ולהוביל את הארגון דרך תקופות מאתגרות בצורה אפקטיבית ומקצועית.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> זיהוי מוקדם של סיכונים ואתגרים</li>
+            <li><i class="fas fa-check-circle"></i> פיתוח תוכניות חירום והתמודדות</li>
+            <li><i class="fas fa-check-circle"></i> ליווי בקבלת החלטות קריטיות</li>
+            <li><i class="fas fa-check-circle"></i> בניית חוסן ארגוני ואישי</li>
+          </ul>
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="services-item-12" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-image">
+      
+          <img data-placeholder="service-8" data-context="מנטור עסקי מייעץ למנכ" ל="" בניהול="" משבר="" עסקי="" בסביבה="" מקצועית"="" src="/assets/service-service-8.webp" alt="ניהול משברים עסקיים" class="service-img">
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="אופטימיזציה-של-תהליכים-עסקיים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed">
+      
+        <div class="service-detailed-content">
+          <h2>אופטימיזציה של תהליכים עסקיים</h2>
+          <p>שירות מתמחה בשיפור יעילות ארגונית באמצעות ניתוח וייעול תהליכים עסקיים. המנטורינג כולל מיפוי תהליכים קיימים, זיהוי צווארי בקבוק ואי-יעילויות, ופיתוח פתרונות לשיפור הביצועים הארגוניים. ד"ר הורוביץ מסייע בבניית מערכות עבודה אפקטיביות, הטמעת שיטות עבודה מתקדמות, ושיפור תהליכי קבלת החלטות.</p>
+          <p>התוכנית כוללת עבודה על פיתוח תרבות של שיפור מתמיד, הטמעת כלי ניהול מתקדמים, ובניית מדדי ביצוע שמאפשרים מעקב ושיפור מתמשך. המנטורינג מתאים במיוחד לארגונים המעוניינים להגביר את היעילות התפעולית ולשפר את חווית הלקוח.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> מיפוי וניתוח תהליכים עסקיים</li>
+            <li><i class="fas fa-check-circle"></i> זיהוי הזדמנויות לייעול ושיפור</li>
+            <li><i class="fas fa-check-circle"></i> הטמעת שיטות עבודה מתקדמות</li>
+            <li><i class="fas fa-check-circle"></i> בניית מדדי ביצוע ומעקב</li>
+          </ul>
+        </div>
+        <div class="service-detailed-image">
+          <img data-placeholder="service-9" data-context="מנטור עסקי מציג תהליך אופטימיזציה עסקית על מסך גדול לצוות ניהול" src="/assets/service-service-9.webp" alt="אופטימיזציה של תהליכים עסקיים" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="אופטימיזציה-של-תהליכים-עסקיים" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-content">
+      
+          <h2>אופטימיזציה של תהליכים עסקיים</h2>
+          <p>שירות מתמחה בשיפור יעילות ארגונית באמצעות ניתוח וייעול תהליכים עסקיים. המנטורינג כולל מיפוי תהליכים קיימים, זיהוי צווארי בקבוק ואי-יעילויות, ופיתוח פתרונות לשיפור הביצועים הארגוניים. ד"ר הורוביץ מסייע בבניית מערכות עבודה אפקטיביות, הטמעת שיטות עבודה מתקדמות, ושיפור תהליכי קבלת החלטות.</p>
+          <p>התוכנית כוללת עבודה על פיתוח תרבות של שיפור מתמיד, הטמעת כלי ניהול מתקדמים, ובניית מדדי ביצוע שמאפשרים מעקב ושיפור מתמשך. המנטורינג מתאים במיוחד לארגונים המעוניינים להגביר את היעילות התפעולית ולשפר את חווית הלקוח.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> מיפוי וניתוח תהליכים עסקיים</li>
+            <li><i class="fas fa-check-circle"></i> זיהוי הזדמנויות לייעול ושיפור</li>
+            <li><i class="fas fa-check-circle"></i> הטמעת שיטות עבודה מתקדמות</li>
+            <li><i class="fas fa-check-circle"></i> בניית מדדי ביצוע ומעקב</li>
+          </ul>
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="services-item-15" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-image">
+      
+          <img data-placeholder="service-9" data-context="מנטור עסקי מציג תהליך אופטימיזציה עסקית על מסך גדול לצוות ניהול" src="/assets/service-service-9.webp" alt="אופטימיזציה של תהליכים עסקיים" class="service-img">
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="מנטורינג-לסטארטאפים-וחברות-צעירות" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed reverse">
+      
+        <div class="service-detailed-content">
+          <h2>מנטורינג לסטארטאפים וחברות צעירות</h2>
+          <p>תוכנית ייחודית המותאמת לצרכים הספציפיים של יזמים וחברות בשלבים מוקדמים. המנטורינג ליזמים ומנהלים בכירים בסטארטאפים כולל ליווי בפיתוח מודל עסקי, גיוס משקיעים, בניית צוות ניהולי, והובלת צמיחה מהירה. ד"ר הורוביץ מביא ניסיון רב בליווי סטארטאפים מהרעיון הראשוני ועד להצלחה מסחרית.</p>
+          <p>השירות כולל עבודה על פיתוח אסטרטגיית Go-to-Market, בניית מערכות יחסים עם משקיעים ושותפים אסטרטגיים, וניהול אתגרים ייחודיים לחברות צעירות. המנטורינג מתמקד בהאצת תהליכי למידה, הימנעות מטעויות נפוצות, ובניית יסודות איתנים לצמיחה מתמשכת.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> פיתוח ואימות מודל עסקי</li>
+            <li><i class="fas fa-check-circle"></i> הכנה לגיוסי הון והצגה למשקיעים</li>
+            <li><i class="fas fa-check-circle"></i> בניית צוות ניהולי מנצח</li>
+            <li><i class="fas fa-check-circle"></i> הובלת צמיחה מהירה ובת קיימא</li>
+          </ul>
+        </div>
+        <div class="service-detailed-image">
+          <img data-placeholder="service-10" data-context="יזם צעיר מקבל מנטורינג עסקי בסביבת סטארטאפ מודרנית ודינמית" src="/assets/service-service-10.webp" alt="מנטורינג לסטארטאפים" class="service-img">
+        </div>
+      
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="מנטורינג-לסטארטאפים-וחברות-צעירות" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-content">
+      
+          <h2>מנטורינג לסטארטאפים וחברות צעירות</h2>
+          <p>תוכנית ייחודית המותאמת לצרכים הספציפיים של יזמים וחברות בשלבים מוקדמים. המנטורינג ליזמים ומנהלים בכירים בסטארטאפים כולל ליווי בפיתוח מודל עסקי, גיוס משקיעים, בניית צוות ניהולי, והובלת צמיחה מהירה. ד"ר הורוביץ מביא ניסיון רב בליווי סטארטאפים מהרעיון הראשוני ועד להצלחה מסחרית.</p>
+          <p>השירות כולל עבודה על פיתוח אסטרטגיית Go-to-Market, בניית מערכות יחסים עם משקיעים ושותפים אסטרטגיים, וניהול אתגרים ייחודיים לחברות צעירות. המנטורינג מתמקד בהאצת תהליכי למידה, הימנעות מטעויות נפוצות, ובניית יסודות איתנים לצמיחה מתמשכת.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check-circle"></i> פיתוח ואימות מודל עסקי</li>
+            <li><i class="fas fa-check-circle"></i> הכנה לגיוסי הון והצגה למשקיעים</li>
+            <li><i class="fas fa-check-circle"></i> בניית צוות ניהולי מנצח</li>
+            <li><i class="fas fa-check-circle"></i> הובלת צמיחה מהירה ובת קיימא</li>
+          </ul>
+        
+    </div>
+  </div>
+</section>
+<section class="section service-section" id="services-item-18" data-zappy-section="true">
+  <div class="container">
+    <div class="service-detailed-image">
+      
+          <img data-placeholder="service-10" data-context="יזם צעיר מקבל מנטורינג עסקי בסביבת סטארטאפ מודרנית ודינמית" src="/assets/service-service-10.webp" alt="מנטורינג לסטארטאפים" class="service-img">
+        
+    </div>
+  </div>
+</section>
+
+  <section class="methodology-section">
+    <div class="container">
+      <h2>המתודולוגיה של ד"ר איל הורוביץ</h2>
+      <p class="section-intro">כמנטור עסקי מוביל, ד"ר הורוביץ פיתח גישה ייחודית המשלבת תיאוריה אקדמית עם ניסיון מעשי רב שנים. המתודולוגיה מבוססת על עקרונות מוכחים ומותאמת אישית לכל לקוח.</p>
+      <div class="methodology-grid">
+        <div class="methodology-card">
+          <div class="methodology-icon"><i class="fas fa-search"></i></div>
+          <h3>אבחון מעמיק</h3>
+          <p>ניתוח מקיף של המצב הנוכחי, זיהוי אתגרים והזדמנויות, והבנת ההקשר הארגוני והאישי.</p>
+        </div>
+        <div class="methodology-card">
+          <div class="methodology-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>הגדרת יעדים</h3>
+          <p>קביעת יעדים ברורים, מדידים וברי השגה, עם אבני דרך ומדדי הצלחה מוגדרים.</p>
+        </div>
+        <div class="methodology-card">
+          <div class="methodology-icon"><i class="fas fa-cogs"></i></div>
+          <h3>תוכנית פעולה</h3>
+          <p>פיתוח תוכנית מפורטת עם צעדים קונקרטיים, לוחות זמנים, ואחריות ברורה.</p>
+        </div>
+        <div class="methodology-card">
+          <div class="methodology-icon"><i class="fas fa-sync"></i></div>
+          <h3>יישום ומעקב</h3>
+          <p>ליווי צמוד בתהליך היישום, מעקב אחר התקדמות, והתאמות בזמן אמת לפי הצורך.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing-section">
+    <div class="container">
+      <h2>מסלולי מנטורינג מותאמים</h2>
+      <p class="section-intro">ד"ר איל הורוביץ מציע מספר מסלולי מנטורינג המותאמים לצרכים ולתקציבים שונים. כל מסלול כולל ליווי אישי ומקצועי עם דגש על תוצאות מדידות.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>מנטורינג פרטני</h3>
+          <div class="pricing-features">
+            <p><i class="fas fa-check"></i> פגישות חודשיות אחד על אחד</p>
+            <p><i class="fas fa-check"></i> זמינות בין הפגישות</p>
+            <p><i class="fas fa-check"></i> תוכנית עבודה מותאמת אישית</p>
+            <p><i class="fas fa-check"></i> מעקב והערכה מתמשכת</p>
+          </div>
+          <a href="/contact" class="btn btn-secondary">פנה לפרטים</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="featured-badge">מומלץ</div>
+          <h3>מנטורינג אינטנסיבי</h3>
+          <div class="pricing-features">
+            <p><i class="fas fa-check"></i> פגישות שבועיות או דו-שבועיות</p>
+            <p><i class="fas fa-check"></i> זמינות מלאה לייעוץ</p>
+            <p><i class="fas fa-check"></i> ליווי בהחלטות אסטרטגיות</p>
+            <p><i class="fas fa-check"></i> תוכנית מקיפה ומפורטת</p>
+          </div>
+          <a href="/contact" class="btn btn-primary">פנה לפרטים</a>
+        </div>
+        <div class="pricing-card">
+          <h3>מנטורינג קבוצתי</h3>
+          <div class="pricing-features">
+            <p><i class="fas fa-check"></i> קבוצות קטנות של מנהלים</p>
+            <p><i class="fas fa-check"></i> למידה משותפת ושיתוף ניסיון</p>
+            <p><i class="fas fa-check"></i> סדנאות ומפגשי העשרה</p>
+            <p><i class="fas fa-check"></i> רשת מקצועית וחיבורים</p>
+          </div>
+          <a href="/contact" class="btn btn-secondary">פנה לפרטים</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>מעוניינים לשמוע עוד על השירותים?</h2>
+        <p>צרו קשר עוד היום לפגישת היכרות ראשונית ללא התחייבות. נשמח לשמוע על האתגרים שלכם ולהציע פתרון מותאם אישית.</p>
+        <a href="/contact" class="btn btn-primary btn-large">קבע פגישה עכשיו</a>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2025 ד"ר איל הורוביץ. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<a href="https://linkedin.com/company/[linkedin_handle]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></div>
+          <div class="footer-legal">
+            <a href="/privacy" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="/accessibility" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="/terms" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = '79048c8c-da66-45fd-9c4b-a4d4e7c2e1c9';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>
