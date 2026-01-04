@@ -89,18 +89,21 @@ img {
 }
 
 :root {
-  --primary-color: #1e3a8a;
+--primary-color: #1e3a8a;
   --secondary-color: #d4af37;
   --accent-color: #60a5fa;
   --text-color: #1a1a1a;
   --light-text: #ffffff;
   --bg-white: #ffffff;
-  --bg-light: #f8fafc;
+  --bg-light: #ffffff;
   --border-color: #e2e8f0;
   --shadow: 0 4px 12px rgba(0,0,0,0.08);
   --shadow-hover: 0 8px 24px rgba(0,0,0,0.12);
   --nav-color: #1a1a1a;
   --nav-hover-color: #1e3a8a;
+  --background-color: #ffffff;
+  --surface-color: #f8f9fa;
+  --text-secondary-color: #8c8c8c;
 }
 
 .container {
@@ -320,8 +323,8 @@ small, .small-text {
 }
 
 .nav-cta-btn:hover {
-  background: #1e40af;
-  border-color: #1e40af;
+  background: #1e3a8a;
+  border-color: #1e3a8a;
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
  color: #FFFFFF !important;}
@@ -493,7 +496,7 @@ html[lang="fr"] .phone-header-btn {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #d4af37 100%);
  color: #FFFFFF !important;}
 
 .hero-img {
@@ -573,8 +576,8 @@ html[lang="fr"] .phone-header-btn {
 }
 
 .btn-primary:hover {
-  background: #1e40af;
-  border-color: #1e40af;
+  background: #1e3a8a;
+  border-color: #1e3a8a;
   transform: translateY(-2px);
   box-shadow: var(--shadow-hover);
  color: #FFFFFF !important;}
@@ -842,7 +845,7 @@ html[lang="fr"] .phone-header-btn {
 
 .cta-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, var(--primary-color) 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #d4af37 100%);
   text-align: center;
  color: #FFFFFF !important;}
 
@@ -1053,7 +1056,7 @@ html[lang="fr"] .phone-header-btn {
 }
 
 .contact-text a:hover {
-  color: #1e40af;
+  color: #1e3a8a;
 }
 
 .contact-cta {
@@ -1236,7 +1239,7 @@ img, picture, figure {
 
     /* Legal Footer Styles - Header Colors */
     .legal-footer {
-      background-color: #f2f2f2;
+      background-color: #ffffff;
       color: #1a1a1a;
       padding: 20px 0;
       font-size: 16px;
@@ -1452,8 +1455,8 @@ img, picture, figure {
 
 /* Cookie Consent Customizations */
 :root {
-  --cc-btn-primary-bg: #3b82f6;
-  --cc-btn-primary-border: #3b82f6;
+  --cc-btn-primary-bg: #d4af37;
+  --cc-btn-primary-border: #d4af37;
   --cc-btn-primary-hover-bg: #2269dd;
 }
 
@@ -1643,7 +1646,7 @@ img, picture, figure {
 .mic-access-tool-box-header,
 div[id*="mic-access-tool-box"] header,
 div[id*="mic-access-tool-box"] .header {
-  background: #f2f2f2 !important;
+  background: #ffffff !important;
   color: white !important;
 }
 
@@ -1680,7 +1683,7 @@ div[id*="mic-access-tool-box"] button:hover {
 #mic-access-tool-box button[title*="Reset"],
 #mic-access-tool-box [class*="reset"],
 div[id*="mic-access-tool-box"] button[class*="reset"] {
-  background: #f2f2f2 !important;
+  background: #ffffff !important;
   color: white !important;
 }
 
